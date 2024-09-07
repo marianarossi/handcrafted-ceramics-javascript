@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px)
+{
+ .carousel
+{
+    margin: 0vh 20vh;
+}
+
+.productimage
+{
+    max-height: 25rem;
+    max-width: 25rem;
+    border-radius: 15px;
+}
+.button
+{
+    font-size: 1.3rem;
+}
+
+}
+
+@media screen and (min-width: 1200px)
+{
+    .productpage
+    {
+        font-size: 1rem;
+    }
+
+    .sm-md-row
+    {
+        flex-direction: row;
+    }
+    .containerForm
+{
+    flex-direction: row;
+}
+}
+
+@media screen and (min-width: 1520px){
+    .productpage
+{
+    flex-direction: row;
+}
+.productinfodiv
+{
+    padding-top: 0rem;
+}
+
+}

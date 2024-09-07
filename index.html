@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/media.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+
+  <title>Home</title>
+</head>
+
+<body data-page = "index">
+  <nav id="header"></nav>
+
+  <main>
+    <!-- Carousel -->
+    <div id="carousel" class="carousel slide carousel-fade" data-mdb-ride="carousel" data-mdb-carousel-init></div>
+
+      <!--Section: About the website-->
+      <section class="mt-5 container" id = "aboutus">
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay shadow-2-strong" data-mdb-ripple-init data-mdb-ripple-color="light">
+              <img src="./img/ceramictools.jpg" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+  
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>Discover Unique Handcrafted Ceramics</strong></h4>
+            <p class="text-muted">
+              Your online destination for unique, handcrafted ceramic art. 
+              Our collection includes beautiful vases, bowls, mugs and plates. 
+              Each piece blends traditional techniques with modern design, 
+              perfect for enhancing your home or gifting.
+            </p>
+            <p><strong>Support Sustainability and Fair Trade</strong></p>
+            <p class="text-muted"> 
+              Enjoy a seamless shopping experience with detailed product descriptions, 
+              high-resolution images, and secure checkout. 
+              Explore our curated selection to find the perfect ceramic piece to elevate your space.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Cards -->
+      <div class="mt-5 row row-cols-1 row-cols-md-3 g-4 mx-5" id ="product-cards">
+        <!-- products are being renderized in products.js -->
+
+      </div>
+  </main>
+
+  <footer class="text-center text-lg-start text-muted" id="footer"></footer>
+
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+
+  <!-- JS -->
+  <script src="js/app.js" type="module"></script>
+  <script src="js/products.js"></script>
+
+
+</body>
+
+</html>

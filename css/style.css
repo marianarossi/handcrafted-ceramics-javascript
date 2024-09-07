@@ -1,0 +1,173 @@
+*
+{
+    background-color: #F4F5EC;
+}
+
+.logo
+{
+    max-height: 5rem;
+}
+
+.m-25
+{
+    margin-right: 25rem;
+}
+
+.m-1
+{
+    margin-right: 1rem;
+}
+
+
+/* defines background color of the carousel indicator icons to transparent */
+.carousel-control-prev-icon,
+.carousel-control-next-icon,
+.carousel-indicators,
+.bg-transparent
+{
+    background-color: transparent;
+}
+
+/* form css */
+input[type = "text"],
+input[type = "password"],
+input[type = "email"],
+input[type = "date"],
+input[type = "tel"],
+select
+{
+    font-family: "Roboto", sans-serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+}
+
+.w-50
+{
+    width: 50%;
+}
+
+.display-flex
+{
+    display: flex;
+}
+
+.flex-column
+{
+    flex-direction: column;
+}
+
+.content-center
+{
+    align-content: center;
+}
+
+
+
+.productpage
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-color: #F4F5EC;
+    padding: 3rem;
+}
+
+.productimage
+{
+    max-height: 20rem;
+    max-width: 20rem;
+    border-radius: 5px;
+}
+
+.button
+{
+    background-color: #198754;
+    border-radius: .25rem;
+    padding: .375rem .75rem;
+    border: 1px solid transparent;
+    font-size: 0.75rem;
+    color: white;
+}
+
+.button:hover
+{
+    background-color: #157347;
+    border-color: #146c43;
+    transition: color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out;
+    /* faz com que a transicao de cor seja mais lenta */
+}
+.productinfo
+{
+    padding: 5rem;
+    width: 100%;
+}
+
+.productinfodiv
+{
+    padding-left: 2rem;
+    padding-top: 5rem;
+}
+
+.table
+{
+    font-size: 1rem !important;
+}
+.thead
+{
+    --mdb-table-bg-state: #F4F5EC;
+}
+
+.productgallery
+{
+    width: 50%;
+
+    position: relative;
+    left:20%;
+    display: flex;
+    flex-direction: row;
+}
+
+.minigallery
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.miniphoto
+{
+    max-width: 5rem;
+    max-height: 5rem;
+    border-radius: 15px;
+    margin: 0 1rem 1rem 1rem;
+
+}
+
+.containerForm
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.loginImg
+{
+    flex: 1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-width: 100vh;
+}
+
+.form
+{
+    padding: 3rem;
+    flex: 1;
+}
+.sm-md-row
+{
+    flex-direction: column;
+}

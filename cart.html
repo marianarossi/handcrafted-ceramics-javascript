@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/media.css">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+
+    <title>Cart</title>
+</head>
+<body>
+  <!-- REFAZER CARRINHO COM CSS PROPRIO, RESPONSIVIDADE PROPRIA, JS DOS PRODUTOS  NO CARRINHO, JS DO VALOR TOTAL (INCLUINDO FRETE) -->
+     <!-- Nav -->
+  <nav id="header"></nav>
+
+  <main>
+    
+
+      <section class="h-100 h-custom">  
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-12">
+             <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+              <div class="card-body p-0">
+                <div class="row g-0">
+                  <div class="col-lg-8">
+                    <div class="p-5">
+
+                      <!-- Title -->
+                      <div class="d-flex justify-content-between align-items-center mb-5">
+                        <h1 class="fw-bold mb-0">Shopping Cart</h1>
+                        <div class="mb-0 text-muted" id="itemCount"></div>
+                      </div>
+
+                      <!-- End title -->
+                       
+                      <hr class="my-4"> <!-- Line separator -->
+
+                      <div id = "shopping-cart"></div>
+                      <!-- Cart is being renderized in cart.js -->
+
+                      <hr class="my-4"> <!-- Line separator -->
+    
+                      <div class="pt-5">
+                        <h6 class="mb-0"><a href="index.html" class="text-body"><i
+                              class="fas fa-long-arrow-alt-left me-2"></i>Back to shop</a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Right side of the Cart -->
+                  <div class="col-lg-4 bg-grey">
+                    <div class="p-5">
+                      <h3 class="fw-bold mb-5 mt-2 pt-1">Summary</h3>
+                      <hr class="my-4">
+    
+                      <div class="d-flex justify-content-between mb-4" id = "subtotal">
+                        <h5 class="">Subtotal</h5>
+                      </div>
+    
+                      <label class="form-label">Shipping</label>
+    
+                      <div class="mb-4 pb-2">
+                        <select data-mdb-select-init id = "shipping">
+                          <option value="0">Pick up in Store - $0.00</option>
+                          <option value="5">Standard Delivery - $5.00</option>
+                          <option value="15">Fast Delivery - $15.00</option>
+                        </select>
+                      </div>
+    
+                      <label class="form-label">Discount Code</label>
+    
+                      <div class="mb-5">
+                        <div data-mdb-input-init class="form-outline">
+                          <input type="text" id="form3Examplea2" class=""/>
+                        </div>
+                      </div>
+    
+                      <hr class="my-4">
+    
+                      <div class="d-flex justify-content-between mb-5" id = "total">
+                        <h5 class="">Total</h5>
+                        
+                      </div>
+    
+                      
+                      <a class="nav-link" href="login.html"><button  href="index.html" type="button"  data-mdb-ripple-init class="btn btn-dark btn-block btn-lg"data-mdb-ripple-color="dark">Finish</button></a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>  
+    
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start text-muted" id="footer"></footer>
+  
+  <!-- MDB -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+  <!-- JS -->
+  <script src="js/app.js" type="module"></script>
+  <script src="js/cart.js" type="module"></script>
+
+</body>
+</html>
