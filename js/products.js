@@ -88,7 +88,6 @@ function loadProduct(e)
 {
   e.preventDefault(); 
 
-  const target = e.currentTarget;
   const productId = e.target.getAttribute('data-id');
 
    // Store the productId in localStorage to be used in product.html
@@ -98,7 +97,6 @@ function loadProduct(e)
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const currentPage = document.body.getAttribute('data-page');
 if(window.location.pathname.endsWith('product.html')) //se esta na pag produto
 {
   const productId = localStorage.getItem('selectedProductId');
@@ -123,8 +121,9 @@ if(window.location.pathname.endsWith('product.html')) //se esta na pag produto
       <p>${selectedItem.text}</p>
       <p><strong>Support Local Art</strong></p>
       <p><s>${selectedItem.price}</s>
-            <strong>${selectedItem.installment}</strong></p>
-      <button data-id ="${selectedItem.id}" id = "btAdd" href="cart.html" class="button">Adicionar ao carrinho</button>
+      <strong>${selectedItem.installment}</strong></p>
+      <input type="search" class="button shippingbutton" placeholder="Estimate Shipping" aria-label="Search"aria-describedby="search-addon" />
+      <button data-id ="${selectedItem.id}" id = "btAdd" href="cart.html" class="button">Adicionar ao carrinho</button>       
     </div>`;
     productsContainer.querySelector('#btAdd').addEventListener('click', addItemCart);
 

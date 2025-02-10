@@ -1,6 +1,6 @@
 export const headerComponent = 
 `
-<div class = "navbar navbar-expand-lg">
+<div class = "navbar p-fixed navbar-expand-lg">
       <div class="container-fluid">
       
             <!-- Collapse Button -->

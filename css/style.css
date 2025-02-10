@@ -3,6 +3,17 @@
     background-color: #F4F5EC;
 }
 
+.p-fixed
+{
+    position: fixed !important;
+    width: 100%;
+    z-index: 100;
+}
+
+main
+{
+    padding-top: 4.8rem;
+}
 .logo
 {
     max-height: 5rem;
@@ -92,12 +103,24 @@ select
     color: white;
 }
 
+.shippingbutton
+{
+    background-color: #d8d8d3;
+    color: rgb(64, 64, 64);
+}
+
+.shippingbutton:hover
+{
+    background-color: #F4F5EC !important;
+    /* must be important cause the class button is also applied here, making button:hover */
+}
+
 .button:hover
 {
     background-color: #157347;
     border-color: #146c43;
     transition: color .25s ease-in-out, background-color .25s ease-in-out, border-color .25s ease-in-out, box-shadow .25s ease-in-out;
-    /* faz com que a transicao de cor seja mais lenta */
+    /* color transition be more smoothly */
 }
 .productinfo
 {
